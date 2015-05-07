@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ThreeJS_template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1, IE=9">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="robots" content="noindex,nofollow" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-title" content="3dCarGamePrototype">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<!-- non-retina iPhone pre iOS 7 -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/icons/app_icon_57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/icons/app_icon_60x60.png">
+	<!-- non-retina iPad pre iOS 7 -->
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/app_icon_72x72.png">
+	<!-- non-retina iPad iOS 7 -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/app_icon_76x76.png">
+	<!-- retina iPhone pre iOS 7 -->
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/icons/app_icon_114x114.png">
+	<!-- retina iPhone iOS 7 -->
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/app_icon_120x120.png">
+	<!-- retina iPad pre iOS 7 -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/icons/app_icon_144x144.png">
+	<!-- retina iPad iOS 7 -->
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    
+    <!--    LOAD SCRIPT    -->
+	<script src="src/script.js"></script>
+	<script src="src/car.js"></script>
+	<script src="src/game.js"></script>
+	<script src="src/randomLevel.js"></script>
+	<script src="lib/render.js"></script>
+	<script src="lib/p2.min.js"></script>
+	<script src="lib/Stats.js"></script>
+	<script src="lib/three.min.js"></script>
+	<script src="lib/OrbitControls.js"></script>
+    
+</head>
+<body onload="init()" style="padding:0px; margin:0px; overflow:hidden;">
+<div id="loadingScreen" class="">
+    <div id="content">
+        <img class="center img" src="assets/images/logo.png"/>
+        <div id="loadingBar" class="center"></div>
+        <div id="intro">
+            <h2>Truck Trials <br><small>advanced prototype</small></h2>
+            <p>Features, one endless level, 3d graphics rendered by the <a href="http://threejs.org" target="_blank">three JS</a> lybrarie, 2d physics computed by <a href="https://schteppe.github.io/p2.js/" target="_blank">P2.js</a>.</p>
+            <div class="left">
+                <div id="playButton" class="btn center"><i class="fa fa-gamepad"></i> Play</div>
+            </div>
+            <div class="left">
+                <div id="playButton" class="btn center"><i class="fa fa-github"></i> github</div>
+            </div>
+             <small>© 2015 <a href="http://www.inkfood.com">inkfood</a>. All rights reserved.</small>
+        </div>    
+    </div>
+</div>
+<div id="menu">
+    <i id="btn_reset" class="fa fa-3x fa-repeat GUIbtn"></i>
+    <i id="btn_help" class="fa fa-2x fa-question-circle GUIbtn"></i>
+</div>
+<a id="inkfood" href="inkfood.com" target="_blank">
+    <img class="logo" src="assets/images/logo_inkfood.png"><br>
+    <small>inkfood</small>
+</a>
+</body>
+</html>
